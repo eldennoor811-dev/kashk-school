@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12345a">
+  <title>منصة كشك الرقمية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">🎓</div>
+    <div>
+      <h2>منصة كشك الرقمية</h2>
+      <p>كشك الثانوية العسكرية بنين بزفتى</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="loginSection" class="login-box">
+      <div class="welcome-icon">🏫</div>
+      <h1>أهلاً بك في منصة كشك</h1>
+      <p class="muted">المنصة الرقمية للصف الأول بكالوريا</p>
+
+      <form id="loginForm">
+        <label>الاسم بالكامل</label>
+        <input id="userName" type="text"
+          placeholder="اكتب اسمك" required>
+
+        <label>نوع الحساب</label>
+        <select id="userRole" required>
+          <option value="">اختر نوع الحساب</option>
+          <option value="student">طالب</option>
+          <option value="teacher">مدرس</option>
+          <option value="supervisor">رئيس الدور</option>
+          <option value="parent">ولي أمر</option>
+          <option value="admin">المدير / الأدمن</option>
+        </select>
+
+        <label>الفصل</label>
+        <select id="userClass">
+          <option value="">اختر الفصل</option>
+          <option>أولى أول</option>
+          <option>أولى ثاني</option>
+          <option>أولى ثالث</option>
+          <option>أولى رابع</option>
+          <option>أولى خامس</option>
+          <option>أولى سادس</option>
+          <option>أولى سابع</option>
+        </select>
+
+        <label>كود الدخول التجريبي</label>
+        <input id="userCode" type="password"
+          placeholder="كود تجريبي">
+
+        <button type="submit" class="primary-btn">
+          تسجيل الدخول
+        </button>
+      </form>
+
+      <p class="demo-note">
+        نسخة تجريبية للعرض فقط، لا تستخدم بيانات حقيقية.
+      </p>
+    </section>
+
+    <section id="dashboard" class="hidden">
+
+      <div class="welcome-card">
+        <div>
+          <p>مرحباً بك 👋</p>
+          <h2 id="welcomeName">المستخدم</h2>
+          <span id="welcomeRole"></span>
+        </div>
+        <div class="profile-icon">👤</div>
+      </div>
+
+      <div class="section-title">
+        <h3>الخدمات الرئيسية</h3>
+      </div>
+
+      <div id="services" class="services-grid"></div>
+
+      <div id="contentArea" class="content-area">
+        <h3>مرحباً بك في منصة كشك الرقمية</h3>
+        <p>اختر إحدى الخدمات للبدء.</p>
+      </div>
+
+      <button id="logoutBtn" class="logout-btn">
+        تسجيل الخروج
+      </button>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>منصة كشك الرقمية © 2026</p>
+    <p>كشك الثانوية العسكرية بنين بزفتى</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

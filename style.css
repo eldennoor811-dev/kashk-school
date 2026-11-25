@@ -1,0 +1,272 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f2f5fa;
+  color: #1b2940;
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #12345a;
+  color: white;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  box-shadow: 0 3px 12px #0002;
+}
+
+.logo {
+  background: white;
+  border-radius: 13px;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+}
+
+.topbar h2 {
+  font-size: 19px;
+}
+
+.topbar p {
+  color: #c8d8ed;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+main {
+  max-width: 850px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+.login-box {
+  background: white;
+  padding: 28px 22px;
+  border-radius: 20px;
+  max-width: 480px;
+  margin: 30px auto;
+  box-shadow: 0 5px 25px #19375b12;
+}
+
+.welcome-icon {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.login-box h1 {
+  text-align: center;
+  font-size: 23px;
+  color: #12345a;
+}
+
+.muted {
+  text-align: center;
+  color: #8290a3;
+  margin: 10px 0 25px;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 8px;
+  font-size: 14px;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dce3ed;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: #fafcff;
+  color: #24354b;
+}
+
+input:focus, select:focus {
+  border-color: #2874c7;
+  box-shadow: 0 0 0 3px #2874c71a;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 15px;
+  background: #1762a5;
+  color: white;
+  border-radius: 11px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.primary-btn:active {
+  transform: scale(.98);
+}
+
+.demo-note {
+  text-align: center;
+  font-size: 11px;
+  color: #a26b28;
+  margin-top: 18px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.welcome-card {
+  background: linear-gradient(135deg, #12345a, #2679b8);
+  color: white;
+  padding: 25px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.welcome-card p {
+  color: #d8e9fa;
+  font-size: 13px;
+}
+
+.welcome-card h2 {
+  margin: 10px 0;
+}
+
+.welcome-card span {
+  font-size: 13px;
+  color: #dceaff;
+}
+
+.profile-icon {
+  font-size: 40px;
+  background: #ffffff25;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.section-title {
+  margin: 25px 0 15px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px 12px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 12px #00000008;
+  border: 1px solid #edf0f5;
+  transition: .2s;
+  color: #243c59;
+}
+
+.service-card:active {
+  transform: scale(.96);
+  background: #edf5ff;
+}
+
+.service-icon {
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.service-card h4 {
+  font-size: 14px;
+}
+
+.content-area {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 25px;
+  min-height: 130px;
+  line-height: 2;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.content-area h3 {
+  color: #12345a;
+  margin-bottom: 12px;
+}
+
+.content-area p {
+  font-size: 14px;
+}
+
+.data-item {
+  padding: 12px;
+  background: #f3f7fc;
+  border-radius: 9px;
+  margin: 10px 0;
+}
+
+.logout-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #fcebec;
+  color: #c13a40;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.action-btn {
+  background: #1762a5;
+  color: white;
+  padding: 11px 15px;
+  border-radius: 9px;
+  margin: 6px 3px;
+}
+
+.action-btn:disabled {
+  opacity: .5;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  color: #8390a2;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.status-present {
+  color: #16834a;
+  font-weight: bold;
+}
+
+.status-absent {
+  color: #c43b3b;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
